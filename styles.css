@@ -2,15 +2,15 @@ body {
     font-family: 'Century', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4;
+    background-color: #030300;
     overflow-x: hidden;
 }
 
 header {
     position: relative;
     z-index: 10; /* Hace que el menú esté por encima de la imagen del banner */
-    background-color: #DB9123;
-    color: #FFFFFF;
+    background-color: #FFE11D;
+    color: #030300;
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -22,14 +22,14 @@ nav {
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #030300;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .banner {
-    background-image: url('img/bn.jpeg');
+    background-image: url('img/bn.png');
     background-size: cover;
     height: 300px;
     display: flex;
@@ -81,7 +81,7 @@ nav a {
     overflow: hidden;
     width: 60%; /* Ajusta el ancho del carrusel para que no ocupe toda la página */
     margin: 20px auto; /* Centra el carrusel en la página */
-    border: 2px solid #DB9123;
+    border: 2px solid #8f8f8f;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
