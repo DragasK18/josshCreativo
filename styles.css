@@ -7,11 +7,14 @@ body {
 }
 
 header {
-    background-color: #5B3A29;
+    position: relative;
+    z-index: 10; /* Hace que el menú esté por encima de la imagen del banner */
+    background-color: #DB9123;
     color: #FFFFFF;
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 nav {
@@ -26,7 +29,7 @@ nav a {
 }
 
 .banner {
-    background-image: url('banner-image.jpg');
+    background-image: url('img/bn.jpeg');
     background-size: cover;
     height: 300px;
     display: flex;
@@ -63,14 +66,59 @@ nav a {
     margin: 20px 0;
 }
 
+
 .portfolio img {
     margin: 10px;
     width: 200px;
     height: auto;
-    border: 2px solid #5B3A29;
+    border: 2px solid #c0c0c0;
     border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 60%; /* Ajusta el ancho del carrusel para que no ocupe toda la página */
+    margin: 20px auto; /* Centra el carrusel en la página */
+    border: 2px solid #DB9123;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 30%; /* Ajusta el tamaño de las imágenes al 50% del carrusel */
+    height: auto;
+    flex: 0 0 auto;
+    border-radius: 8px;
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
 
 .portfolio img:hover {
     transform: scale(1.05);
@@ -78,7 +126,7 @@ nav a {
 }
 
 footer {
-    background-color: #5B3A29;
+    background-color: #DB9123;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
