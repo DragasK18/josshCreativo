@@ -2,7 +2,7 @@ body {
     font-family: 'Century', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #030300;
+    background-color: #ececec;
     overflow-x: hidden;
 }
 
@@ -76,7 +76,7 @@ nav a {
     margin: 10px;
     width: 200px;
     height: auto;
-    border: 2px solid #c0c0c0;
+    border: 2px solid #f0eded;
     border-radius: 8px;
     transition: transform 0.5s, box-shadow 0.5s;
 }
@@ -84,9 +84,9 @@ nav a {
 .carousel {
     position: relative;
     overflow: hidden;
-    width: 80%; /* Reduce el ancho para que no ocupe toda la página */
+    width: 90%; /* Reduce el ancho para que no ocupe toda la página */
     margin: 50px auto; /* Espacio entre el banner y el carrusel */
-    border: 2px solid #8f8f8f;
+    border: 2px solid #d8d8d8;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
