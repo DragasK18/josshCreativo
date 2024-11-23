@@ -12,7 +12,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000; /* Hace que el menú esté por encima de la imagen del banner */
-    background-color: #Db8300;
+    background-color: #ffe11d;
     color: #030300;
     text-align: center;
     padding: 15px 0;
@@ -202,4 +202,27 @@ footer {
     .columns {
         flex-direction: column; /* Cambia de filas a columnas */
     }
+}
+
+/* Estilos para el botón flotante */
+.boton-flotante {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px;  /* Distancia desde el borde derecho */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Para estar sobre otros elementos */
+}
+
+.boton-flotante img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Hace la imagen circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease;
+}
+
+.boton-flotante img:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor */
 }
